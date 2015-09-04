@@ -38,6 +38,16 @@ body {
   box-shadow: inset 0px 0px 85px -5px rgba(0,0,0,1);
 }
 
+#confetti {
+  /*visibility: hidden;*/
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+.sweet-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 .win-text {
   font-size: 8em;
@@ -98,12 +108,12 @@ header {
 
 li {
   letter-spacing: 1px;
-  font-size: 1.3em;
+  /*font-size: 1.3em;*/
 }
 
 h1 {
-  margin-top: -80px !important;
-  font-size: 4em !important;
+  margin-top: -60px !important;
+  font-size: 3.5em !important;
 }
 
 .tower-block {

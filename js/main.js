@@ -1,6 +1,9 @@
 var $selectedBlock, selectedBlockVal, towerValue, blockIsSelected = false;
 
 $(document).ready(function() {
+
+  $('#confetti').hide();
+
   $('#fullpage').fullpage();
   $.fn.fullpage.setAllowScrolling(false);
 
@@ -39,7 +42,15 @@ $(document).ready(function() {
     }
 
     if ($('.tower-3').children().length === 4) {
-      $('.win-text').show();
+      $('#confetti').fadeIn();
+      swal({
+        title: "you win!",
+        type: "success",
+        confirmButtonText: "hooray!"
+      }, function() {
+        $('#confetti').hide();
+        location.reload();
+      });
       console.log('win');
     }
   });

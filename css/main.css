@@ -10,6 +10,15 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /*background: #111;*/
+}
+
 html {
   font-size: 1em;
   line-height: 1.4;
@@ -17,11 +26,14 @@ html {
 
 body {
   color: white !important;
-  font-family: 'Armata' !important;
+  font-family: 'Nova Flat' !important;
   /*background-color: */
-  background-image: url('../img/waterfall.jpg');
-  background-position: center top;
-  background-size: 100% auto;
+  background-image: url('../img/linen.jpg');
+  /*background-position: center top;*/
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 85px -5px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 0px 85px -5px rgba(0,0,0,1);
+  box-shadow: inset 0px 0px 85px -5px rgba(0,0,0,1);
 }
 
 .win-text {
@@ -38,18 +50,52 @@ body {
  */
 
 h1 {
-  padding-top: 20px;
+  margin-top: -100px !important;
+  font-size: 4em !important;
+}
+
+.row {
+  padding-top: 6vh;
 }
 
 .tower-block {
   box-shadow: 8px 8px 20px black;
 }
 
+.towers {
+  margin-top: 10px;
+  height: 502px;
+  border: 2px solid white;
+  border-style: ridge;
+  border-radius: 30px;
+  z-index: 500;
+  box-shadow: 5px 10px 20px 10px rgba(0,0,0,0.6);
+}
+
 .tower {
-  background-color: green;
-  opacity: 0.9;
   height: 500px;
   border: 20px solid rgba(0, 0, 0, 0.8);
+  background-position: center top;
+  background-size: cover;
+  -webkit-box-shadow: inset 0px 0px 8px 6px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 0px 8px 6px rgba(0,0,0,1);
+  box-shadow: inset 0px 0px 8px 6px rgba(0,0,0,1);
+}
+
+#tower-1 {
+  background-image: url('../img/wood1.jpg');
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#tower-2 {
+  background-image: url('../img/wood2.jpg');
+}
+
+#tower-3 {
+  background-image: url('../img/wood3.jpg');
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .tower-wrapper {
@@ -58,35 +104,46 @@ h1 {
 }
 
 .tower-block {
+  margin-top: 20px;
   display: relative;
   margin-bottom: 15px;
+  border: 1px solid black;
   border-radius: 10px;
+  -webkit-box-shadow: inset 8px 8px 5px -6px rgba(217,210,191,1);
+  -moz-box-shadow: inset 8px 8px 5px -6px rgba(217,210,191,1);
+  box-shadow: inset 8px 8px 5px -6px rgba(217,210,191,0.7),
+              5px 10px 15px -6px rgba(0,0,0,0.8);
+  opacity: 1;
 }
 
 .selected {
-  border: 2px solid yellow;
+  -webkit-box-shadow: 0px 0px 9px 5px #D2C10E;
+  -moz-box-shadow: 0px 0px 9px 5px #D2C10E;
+  box-shadow: 0px 0px 18px 7px #F6FF77,
+              inset 8px 8px 5px -6px rgba(217,210,191,0.7),
+              5px 10px 15px -6px rgba(0,0,0,0.8);
 }
 
 #b1 {
-  width: 80px;
-  height: 30px;  
+  width: 30%;
+  height: 30px;
   background-color: #FE0101;
 }
 
 #b2 {
-  width: 110px;
+  width: 45%;
   height: 30px;
   background-color: #FFCA08;
 }
 
 #b3 {
-  width: 140px;
+  width: 65%;
   height: 30px;
-  background-color: #1039FB;  
+  background-color: #1039FB;
 }
 
 #b4 {
-  width: 170px;
+  width: 85%;
   height: 30px;
   background-color: #FF9409;
 }

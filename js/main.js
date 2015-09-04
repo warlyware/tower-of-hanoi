@@ -1,6 +1,9 @@
 var $selectedBlock, selectedBlockVal, towerValue, blockIsSelected = false;
 
 $(document).ready(function() {
+  $('#fullpage').fullpage();  
+
+
   $('.win-text').hide();
   $('.tower-wrapper').on('click', function(ev) {
     $tower = $(this);
@@ -30,6 +33,6 @@ $(document).ready(function() {
     if ($('.tower-3').children().length === 4) {
       $('.win-text').show();
       console.log('win');
-    }    
+    }
   });
 });

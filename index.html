@@ -10,7 +10,8 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" type="text/css" href="/lib/jquery.fullPage.css" />
+  <link href='https://fonts.googleapis.com/css?family=Nova+Flat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/lib/fullpage.js/jquery.fullPage.css" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -23,34 +24,46 @@
       <![endif]-->
 
   <!-- Add your site or application content here -->
-<h1 class="text-center">Tower of Hanoi</h1>
+<div id="fullpage">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-4 tower" data-value="1" id="tower-1">
-        <div class="tower-wrapper">
-          <div class="tower-block center-block" id="b1" data-value="1"></div>
-          <div class="tower-block center-block" id="b2" data-value="2"></div>
-          <div class="tower-block center-block" id="b3" data-value="3"></div>
-          <div class="tower-block center-block" id="b4" data-value="4"></div>
-        </div>
-      </div>
-      <div class="col-xs-4 tower tower2" data-value="1">
-        <div class="text-center win-text">YOU WIN!</div>
-        <div class="tower-wrapper tower-2 empty">
-        </div>
-      </div>
-      <div class="col-xs-4 tower" data-value="1">
-        <div class="tower-wrapper tower-3 empty" id="tower-3">
+  <div class="section">
+    <h1 class="text-center">Tower of Hanoi</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="towers">
+          <div class="col-xs-4 tower" data-value="1" id="tower-1">
+            <div class="tower-wrapper tower-1">
+              <div class="tower-block center-block" id="b1" data-value="1"></div>
+              <div class="tower-block center-block" id="b2" data-value="2"></div>
+              <div class="tower-block center-block" id="b3" data-value="3"></div>
+              <div class="tower-block center-block" id="b4" data-value="4"></div>
+            </div>
+          </div>
+          <div class="col-xs-4 tower" data-value="1" id="tower-2">
+            <div class="text-center win-text">YOU WIN!</div>
+            <div class="tower-wrapper tower-2 empty">
+            </div>
+          </div>
+          <div class="col-xs-4 tower" data-value="1" id="tower-3">
+            <div class="tower-wrapper tower-3 empty">
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="section">
+    <h1>info</h1>
+  </div>
+
+</div>
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-  <script type="text/javascript" src="/lib/jquery.fullPage.js"></script>
+  <script type="text/javascript" src="/lib/fullpage.js/jquery.fullPage.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

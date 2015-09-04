@@ -7,16 +7,14 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
+  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Nova+Flat' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/lib/fullpage.js/jquery.fullPage.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <!--[if lt IE 8]>
@@ -27,12 +25,13 @@
 <div id="fullpage">
 
   <div class="section">
-    <h1 class="text-center">Tower of Hanoi</h1>
+  <main>
+    <h1 class="center">Tower of Hanoi</h1>
 
     <div class="container">
       <div class="row">
         <div class="towers">
-          <div class="col-xs-4 tower" data-value="1" id="tower-1">
+          <div class="col s4 tower" data-value="1" id="tower-1">
             <div class="tower-wrapper tower-1">
               <div class="tower-block center-block" id="b1" data-value="1"></div>
               <div class="tower-block center-block" id="b2" data-value="2"></div>
@@ -40,22 +39,76 @@
               <div class="tower-block center-block" id="b4" data-value="4"></div>
             </div>
           </div>
-          <div class="col-xs-4 tower" data-value="1" id="tower-2">
+          <div class="col s4 tower" data-value="1" id="tower-2">
             <div class="text-center win-text">YOU WIN!</div>
             <div class="tower-wrapper tower-2 empty">
             </div>
           </div>
-          <div class="col-xs-4 tower" data-value="1" id="tower-3">
+          <div class="col s4 tower" data-value="1" id="tower-3">
             <div class="tower-wrapper tower-3 empty">
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- <footer class="footer">
+      <div class="container">
+        <div id="info-btn"><i class="glyphicon glyphicon-question-sign"></i></div>
+      </div>
+    </footer> -->
+
+    <footer class="page-footer black">
+        <div class="container">
+          <div id="info-btn"><i class="material-icons">help</i></div>
+        </div>
+    </footer>
+  </main>
   </div>
 
   <div class="section">
-    <h1>info</h1>
+    <header class="black">
+        <div class="container">
+          <div id="return-btn"><i class="material-icons">cancel</i></div>
+        </div>
+    </header>
+    <div class="row">
+      <div class="col s12 l8 offset-l2">
+        <div class="card lighten-4 z-depth-3">
+          <div class="card-content grey-text text-darken-2">
+            <div class="card-title grey-text text-darken-3 center">Tower of Hanoi</div>
+            <div class="row">
+              <div class="col s12 l5">
+                <img src="/img/hanoi_butler.png" class="card-img hide-on-med-and-down" alt="">
+              </div>
+              <div class="col s12 l7">
+                <p class="flow-text">
+                  The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules:
+                  <ol>
+                    <li>Only one disk can be moved at a time.</li>
+                    <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.</li>
+                    <li>No disk may be placed on top of a smaller disk.</li>
+                  </ol>
+                </p>
+              </div>
+            </div>
+            <div class="card-action">
+              <a href="//en.wikipedia.org/wiki/Tower_of_Hanoi" target="_blank">read more on wikipedia</a>
+              <a href="//github.com/warlyware/tower-of-hanoi" target="_blank">checkout on github</a>
+              <div class="right">
+                illustration by:
+                <a href="//egonschiele.deviantart.com/art/Tower-Of-Hanoi-460614703" target="_blank">
+                  egonSchiele
+                </a>
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>
@@ -64,6 +117,7 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
   <script type="text/javascript" src="/lib/fullpage.js/jquery.fullPage.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

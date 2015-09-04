@@ -1,0 +1,22 @@
+{
+  "name": "tower",
+  "version": "0.0.0",
+  "homepage": "https://github.com/warlyware/tower-of-hanoi",
+  "authors": [
+    "warlyware <danward@gmail.com>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "~2.6.9"
+  }
+}

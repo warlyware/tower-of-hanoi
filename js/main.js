@@ -18,7 +18,7 @@ $(document).ready(function() {
     if (($tower.children().length < 1) && !blockIsSelected) { // if tower empty and no block selected
       // do nothing
     } else if (($tower.children().length < 1) && blockIsSelected) { // else tower empty and block selected
-      $(this).append($selectedBlock);
+      $(this).hide().append($selectedBlock).fadeIn();
       $selectedBlock.removeClass('selected');
       blockIsSelected = false;
     } else if (($tower.children().length > 0) && blockIsSelected) { // else see if tower has allowed move
@@ -26,7 +26,7 @@ $(document).ready(function() {
       selectedTowerVal = $tower.children().first().attr('data-value');
       $selectedBlock.toggleClass('selected');
       if (selectedBlockVal < selectedTowerVal) {
-        $selectedBlock.prependTo($tower).removeClass('selected');
+        $selectedBlock.hide().prependTo($tower).fadeIn().removeClass('selected');
       }
       blockIsSelected = false;
       $selectedBlock = undefined;

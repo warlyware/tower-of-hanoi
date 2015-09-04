@@ -221,6 +221,10 @@ h1 {
   margin-left: 10px !important;
 }
 
+.card-action a {
+  color: #BB7F33 !important;
+}
+
 
 ::-moz-selection {
     background: #b3d4fc;
